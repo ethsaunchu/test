@@ -1,0 +1,216 @@
+/* 声明字体图标 这里一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.style_red{
+    color: #c81623;
+}
+.fr{
+    float:right;
+
+}.fl{
+    float: left;
+
+}
+/* 快捷导航模块 */
+.shortcut{
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;/*子元素继承父元素*/
+}
+
+.shortcut ul li{
+    float: left;
+}
+.shortcut .fr ul :nth-child(even){
+width: 1px;
+height: 12px;
+background-color: #666666;
+margin: 9px 15px 0;
+}
+.icon-arrow::after{
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+/* 头部模块 */
+.header{
+    position: relative;
+    height: 105px;
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+
+}
+.logo a{
+    display: block;
+    font-size: 0;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+}
+.search{
+    position: absolute;
+    top: 25px;
+    left: 347px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+
+}
+.search input{
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+.search button{
+    float: left;
+    width: 80px;
+    height: 32px;
+    color: #ffffff;
+    background-color: #b1191a;
+}
+.hotwords {
+position:absolute;
+top: 70px;
+left: 347px;
+
+}
+.hotwords a{
+    margin: 0 12px;
+}
+.shopcar{
+    position: absolute;
+    top: 25px;
+    right: 63px;
+    width: 140px;
+  height: 36px;
+    border: 1px  solid #dfdfdf;
+    line-height: 36px;
+    text-align: center;
+    background-color: #f7f7f7;
+color: #666666;
+}
+
+.shopcar::before{
+    content: '\e93a';
+    font-family: 'icomoon';
+    margin-right: 5px;
+    margin-left: 10px;
+    color:#b1191a ;
+
+}
+.shopcar::after{
+    content: '\e920';
+    font-family: 'icomoon';
+}
+.shopcar .count{
+    position: absolute;
+    top: -9px;
+    left: 110px;
+    height: 14px;
+    background-color: #b1191a;
+    padding: 0 5px;
+    line-height: 14px;
+    color: #ffffff;
+    border-radius: 7px 7px 7px 0;
+}
+.nav{
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+.dropdown{
+    float: left;
+   
+}
+.dropdown .dt{
+    width: 209px;
+    height: 47px;
+    background-color: #b1191a;
+    color: #ffffff;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+}
+.dropdown .dd{
+    width: 209px;
+    border-left: 1px solid #c81623;
+    display: none;
+}
+.dropdown .dd li{
+    width: 208px;
+    height: 31px;
+    background-color: #c81623;
+    padding: 0 12px;
+    line-height: 31px;
+
+}
+.dropdown .dd li::after{
+    float: right;
+    content: '\e920';
+    font-family: 'icomoon';
+   color: #ffffff;
+}
+.dropdown .dd li:hover{
+    background-color: #fff;   
+}
+.dropdown .dd li:hover a{
+    color: #c81623;
+}
+.dropdown .dd li a{
+    color: #ffffff;
+    font-size: 14px;
+}
+.navitems{
+    float: left;
+}
+.navitems a{
+    display: inline-block;
+    padding: 0 25px;
+    line-height: 45px;
+    font-size: 16px;
+}
+.fotter{
+    height: 418px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+.service{
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+.service li{
+    float: left;
+    padding-left: 37px;
+    width: 300px;
+    height: 50px;
+   
+}
+.service .ima{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -252px -3px;
+}
+.service li h5{
+    font-size: 16px;
+}
+.service li p{
+    font-size: 14px;
+}
